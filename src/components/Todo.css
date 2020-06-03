@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap');
+
+html {
+    font-family: 'Manrope', sans-serif;
+    width: 100%;
+    margin: 0 auto;
+    background-color: 
+    #f0f4f8;
+}
+
+.content h2 {
+    font-size: 1.8rem;
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 6px;
+    width: 600px;
+    background-color: #456f93;
+    color: white;
+    margin-bottom: 60px;
+}
+
+.task.completed {
+    /* background-color: red; */
+    text-decoration: line-through;
+}
+
+.clear-btn {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1rem;
+    background-color: #456f93;
+    border-radius: 3px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color:white;
+    padding: 6px;
+}
+
+.add-btn {
+    font-family: 'Manrope', sans-serif;
+    font-size: 1.1rem;
+    background-color: #456f93;
+    border-radius: 3px;
+    border: 1px solid;
+    color:white;
+    padding: 6px;
+    
+}
+
+input {
+    font-size: 1.2rem;
+    margin-right: 8px;
+    font-family: 'Manrope';
+    border: 0;
+    border-bottom: 1px solid black;
+    outline: 0;
+    background-color: transparent;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.my-tasks {
+    margin: 0 auto;
+    text-align: center;
+    /* border: 1px solid black; */
+    margin-top: 55px;
+    padding: 10%;
+    padding-top: 2%;
+    /* border-radius: 3px; */
+}
+
+.my-tasks h3 {
+    font-size: 1.6rem;
+    width: 275px;
+    margin: 0 auto;
+
+}
+
+.get-done p {
+    font-size: 1.2rem;
+}
+
+
+.task-list {
+    border: 1px solid black;
+    margin-top: 30px;
+    width: 400px;
+    border-radius: 3px;
+    width: 550px;
+    background-color: #cddbe7;
+}
+
+.todo-list h5 {
+    color: grey;
+    border: .5px solid grey;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 3px;
+    margin-bottom: 40px;
+    background-color:#f0f4f8 ;
+}
+
+.todo-list p {
+    font-size: 1.6rem;
+}

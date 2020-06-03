@@ -1,6 +1,7 @@
 import React from 'react';
 import TodoForm from './components/TodoForm';
 import TodoList from './components/TodoList';
+import './components/Todo.css';
 
 const tasks = [
   {
@@ -9,7 +10,7 @@ const tasks = [
       completed: false
   },
   {
-      name: "Walk the Dog",
+      name: "Plan Birthday Party",
       id: 1234,
       completed: false
   }
@@ -64,15 +65,20 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <div>
-        <h2>Welcome to your Todo App!</h2>
+        <div className="content">
+        <h2>Welcome to Todo!</h2>
         <TodoForm addTask={this.addTask} />
       </div>
-      <TodoList
-        toggleTask={this.toggleTask}
-        tasks={this.state.tasks}
-        clearCompleted={this.clearCompleted}
-      />
+        <div className="my-tasks">
+          <h3>My Tasks</h3>
+          <div className="task-list">
+        <TodoList
+          toggleTask={this.toggleTask}
+          tasks={this.state.tasks}
+          clearCompleted={this.clearCompleted}
+        />
+        </div>
+        </div>
       </div>
     );
   }
